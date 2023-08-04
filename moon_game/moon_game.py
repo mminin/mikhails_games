@@ -18,22 +18,6 @@ regions = {
     "Mare Nubium": [130, 180, 250, 290],
     "Mare Moscoviense": [490, 520, 95, 120]
 }
-def plot_random_asterisk(mare_name):
-    plt.figure(figsize=(14, 10))
-    """Plot an asterisk at a random point within a given mare."""
-    # Get the region of the mare
-    x_min, x_max, y_min, y_max = regions[mare_name]   
-    # Generate a random point within this region
-    x = random.randint(x_min, x_max)
-    y = random.randint(y_min, y_max)
-    # Plot the image and the asterisk
-    plt.imshow(moon_image)
-    plt.scatter(x, y, c='r', marker='*')
-    plt.show()
-# Test the function with a random mare
-plot_random_asterisk("Mare Moscoviense")
-
-
 
 import tkinter as tk
 from tkinter import messagebox
@@ -51,13 +35,13 @@ regions = {
     "Oceanus Procellarum": [40, 100, 100, 210],
     "Mare Serenitatis": [220, 280, 90, 140],
     "Mare Tranquillitatis": [280, 330, 160, 190],
-#    "Mare Fecunditatis": [340, 360, 200, 245],
-#    "Mare Crisium": [350, 380, 120, 160],
-#    "Mare Nectaris": [290, 320, 240, 260],
-#    "Mare Frigoris": [150, 300, 25, 40],
-#    "Mare Humorum": [80, 100, 260, 290],
-#    "Mare Nubium": [130, 180, 250, 290],
-#    "Mare Moscoviense": [490, 520, 95, 120]
+    "Mare Fecunditatis": [340, 360, 200, 245],
+    "Mare Crisium": [350, 380, 120, 160],
+    "Mare Nectaris": [290, 320, 240, 260],
+    "Mare Frigoris": [150, 300, 25, 40],
+    "Mare Humorum": [80, 100, 260, 290],
+    "Mare Nubium": [130, 180, 250, 290],
+    "Mare Moscoviense": [490, 520, 95, 120]
 }
 # Create the main window
 window = tk.Tk()
